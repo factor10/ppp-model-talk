@@ -1,18 +1,33 @@
-# @slidev/theme-seriph
+# Factor10 Slidev Theme
 
-[![NPM version](https://img.shields.io/npm/v/@slidev/theme-seriph?color=3AB9D4&label=)](https://www.npmjs.com/package/@slidev/theme-seriph)
+A theme for factor10 for [Slidev](https://github.com/slidevjs/slidev).
 
-An official theme for [Slidev](https://github.com/slidevjs/slidev) using serif fonts.
+Based on https://github.com/slidevjs/themes/tree/main/packages/theme-seriph
 
 ## Install
 
+Add this repository as a subtree:
+
+```shell
+$ git remote add theme git@github.com:factor10/s
+$ git subtree -P theme add theme/main
+```
+
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
-<pre><code>---
-theme: <b>seriph</b>
----</code></pre>
+```yaml
+theme: ./theme
+```
 
 Learn more about [how to use a theme](https://sli.dev/themes/use).
+
+## Update
+Update the subtree (add the _theme_ remote if you haven't already):
+
+```shell
+$ git fetch theme
+$ git subtree -P theme merge theme/main
+```
 
 ## Customization
 
@@ -25,4 +40,4 @@ themeConfig:
 
 ## License
 
-MIT License © 2021 [Anthony Fu](https://github.com/antfu)
+MIT License © 2021 [Anthony Fu](https://github.com/antfu), [factor10](https://factor10.com)
