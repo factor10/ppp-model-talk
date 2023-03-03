@@ -1,7 +1,12 @@
 <template>
-  <div class="slidev-layout fact">
-    <div class="my-auto">
-      <slot />
-    </div>
-  </div>
+  <default class="fact">
+    <slot />
+  </default>
 </template>
+
+<script setup lang="ts">
+import { defineComponent } from 'vue'
+import Default from '../layouts/default.vue'
+
+const components = defineComponent({ Default })
+</script>

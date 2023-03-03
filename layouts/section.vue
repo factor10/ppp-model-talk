@@ -1,7 +1,12 @@
 <template>
-  <div class="slidev-layout section w-full h-full grid">
-    <div class="my-auto text-center">
-      <slot />
-    </div>
-  </div>
+  <default class="section w-full h-full grid text-center">
+    <slot />
+  </default>
 </template>
+
+<script setup lang="ts">
+import { defineComponent } from 'vue'
+import Default from '../layouts/default.vue'
+
+const components = defineComponent({ Default })
+</script>

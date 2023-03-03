@@ -25,8 +25,7 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 Update the subtree (add the _theme_ remote if you haven't already):
 
 ```shell
-$ git fetch theme
-$ git subtree -P theme merge theme/main
+$ git subtree -P theme pull theme main
 ```
 
 ## Customization

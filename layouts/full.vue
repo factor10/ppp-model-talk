@@ -1,5 +1,5 @@
 <template>
-  <default class="quote">
+  <default class="full w-full h-full">
     <slot />
   </default>
 </template>

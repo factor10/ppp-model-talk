@@ -1,5 +1,5 @@
 <template>
-  <default class="quote">
+  <default class="center h-full grid place-content-center">
     <slot />
   </default>
 </template>
