@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import Default from '../layouts/default.vue'
+import { defineComponent } from 'vue'
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
+import Fact from "./fact.vue";
 
 const props = defineProps({
   background: {
@@ -10,15 +13,12 @@ const props = defineProps({
 })
 
 const style = computed(() => handleBackground(props.background, true))
+const components = defineComponent({ Default })
 </script>
 
 <template>
-  <div
-    class="slidev-layout cover text-center"
-    :style="style"
-  >
-    <div class="my-auto w-full">
-      <slot />
-    </div>
-  </div>
+  <default class="cover text-center" :style="style">
+    <slot />
+  </default>
 </template>
+
