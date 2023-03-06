@@ -17,7 +17,7 @@ const components = defineComponent({ Default })
 </script>
 
 <template>
-  <default class="cover text-center" :style="style">
+  <default class="cover h-full grid place-content-center" :style="style">
     <slot />
   </default>
 </template>
