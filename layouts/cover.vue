@@ -3,16 +3,18 @@ import Default from '../layouts/default.vue'
 import { defineComponent } from 'vue'
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
-import Fact from "./fact.vue";
 
 const props = defineProps({
   background: {
     // random image from a curated Unsplash collection by Anthony
     default: 'https://source.unsplash.com/collection/94734566/1920x1080',
   },
+  dim: {
+    default: true,
+  },
 })
 
-const style = computed(() => handleBackground(props.background, true))
+const style = computed(() => handleBackground(props.background, props.dim))
 const components = defineComponent({ Default })
 </script>
 
