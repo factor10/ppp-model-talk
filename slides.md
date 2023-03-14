@@ -24,6 +24,25 @@ css: unocss
 # page transition
 transition: slide-left
 
+layout: intro
+---
+
+# The Best Presentation in the World
+
+Con Sultant
+
+<ul class="list-none! columns-2">
+  <li><mdi-firefox />factor10.com</li>
+  <li><mdi-email />con.sultant@factor10.com</li>
+  <li><mdi-twitter />@consultant</li>
+  <li><mdi-github />consultant</li>
+  <li><mdi-firefox />consultant.blog</li>
+  <li><mdi-linkedin />/in/consultant</li>
+  <li><mdi-mastodon />consultant@mastodon.social</li>
+  <li><mdi-gitlab />consultant</li>
+</ul>
+
+---
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
