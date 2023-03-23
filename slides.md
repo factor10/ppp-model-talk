@@ -27,15 +27,3 @@ layout: fact
 <h1>P<span v-click>roblem</span></h1>
 <h1>P<span v-click>rototype</span></h1>
 <h1>P<span v-click>roduct</span></h1>
-
----
-
-# Varför?
-
----
-
-# Varför inte?
-
----
-
-# Avslutning
